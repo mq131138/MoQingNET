@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>陌清 · 陌清.NET</title>
+  <meta name="description" content="陌清的个人网站：一只猫猫，业余摄影，用尼康 D500 拍鸟，最爱舞萌 DX，也喜欢赛博朋克 2077。" />
+  <meta name="theme-color" content="#ff4d95" />
+  <meta property="og:title" content="陌清 · 陌清.NET" />
+  <meta property="og:description" content="一只猫猫的个人主页：拍鸟、漫展、舞萌 DX、赛博朋克 2077。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/avatar.jpg" />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <link rel="preload" href="assets/fonts/wenkai-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body id="top">
+  <div class="bg" aria-hidden="true">
+    <video class="bg__video" autoplay muted loop playsinline preload="auto" poster="assets/bg/bg-poster.jpg">
+      <source src="assets/bg/bg.mp4" type="video/mp4" />
+    </video>
+    <div class="bg__veil"></div>
+  </div>
+
+  <div class="page">
+    <header class="top">
+      <a class="brand" href="./" aria-label="陌清.NET">
+        <img class="brand__img" src="assets/img/logo.png" alt="陌清.NET" width="800" height="217" />
+      </a>
+
+      <div class="menu">
+        <button class="menu__btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menuPanel">
+          <span class="menu__ico" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="menu__label">菜单</span>
+        </button>
+        <nav class="menu__panel" id="menuPanel" aria-label="站内菜单" aria-hidden="true">
+          <button class="menu__item" type="button" data-sheet="about"><span class="menu__num">01</span><span>了解陌清</span></button>
+          <button class="menu__item" type="button" data-sheet="maimai"><span class="menu__num">02</span><span>了解舞萌</span></button>
+          <button class="menu__item" type="button" data-sheet="nikon"><span class="menu__num">03</span><span>了解尼康</span></button>
+          <button class="menu__item" type="button" data-sheet="cyberpunk"><span class="menu__num">04</span><span>了解赛博朋克 2077</span></button>
+          <button class="menu__item" type="button" data-sheet="furry"><span class="menu__num">05</span><span>了解 Furry</span></button>
+          <button class="menu__item" type="button" data-sheet="other"><span class="menu__num">06</span><span>其他</span></button>
+
+          <div class="player" id="player">
+            <img class="player__cover" src="assets/img/music-cover.jpg" alt="《ツムギボシ》专辑封面" width="200" height="200" />
+            <div class="player__meta">
+              <span class="player__title">ツムギボシ</span>
+              <span class="player__sub">大国奏音 / Timao</span>
+            </div>
+            <button class="player__btn" id="musicBtn" type="button" aria-label="播放音乐" aria-pressed="false">
+              <svg class="player__ico" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5.5v13l11-6.5z" fill="currentColor" />
+              </svg>
+              <svg class="player__ico player__ico--pause" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="8" y="6" width="3.2" height="12" rx="1.4" fill="currentColor" />
+                <rect x="12.8" y="6" width="3.2" height="12" rx="1.4" fill="currentColor" />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="stage">
+      <article class="card">
+        <div class="card__head">
+          <p class="eyebrow"><span class="eyebrow__en">PERSONAL SITE</span><span class="eyebrow__dot" aria-hidden="true">·</span><span>个人主页</span></p>
+          <h1 class="card__title">欢迎来到陌清的个人网站</h1>
+        </div>
+
+        <div class="avatar">
+          <img src="assets/img/avatar.jpg" alt="陌清的头像：戴着皇冠的白色猫猫" width="512" height="512" />
+        </div>
+
+        <div class="intro">
+          <p class="intro__lead">我是陌清，一只猫猫，欢迎和我交友</p>
+          <p>我的生日在<span class="hl">9 月</span>，欢迎给我举牌</p>
+          <p>我是一名业余摄影，现在的相机是<span class="hl">尼康 D500</span>（因为常拍鸟），平时会去漫展玩和拍摄，但更多在公园拍鸟</p>
+          <p>我最喜欢的游戏是<span class="hl">舞萌 DX</span>，你说得对就是音乐洗衣机</p>
+        </div>
+
+        <footer class="card__foot">
+          <span>写于 2026.11.19</span>
+          <span class="card__dot" aria-hidden="true">·</span>
+          <span>点击下方链接了解更多</span>
+        </footer>
+      </article>
+
+      <div class="rail">
+        <button class="btn btn--main" type="button" data-sheet="more">
+          <span class="btn__text">了解更多</span>
+          <svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 12h15M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button class="btn btn--ghost" type="button" data-sheet="links">
+          <span class="btn__text">友情链接</span>
+          <svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8 16L16 8M9 8h7v7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+    </main>
+  </div>
+
+  <div class="sheet" id="sheet" hidden>
+    <div class="sheet__backdrop" data-close></div>
+    <div class="sheet__panel" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" tabindex="-1">
+      <button class="sheet__close" type="button" data-close aria-label="关闭">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 6l12 12M18 6l-12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+      <div class="sheet__scroll" id="sheetBody"></div>
+    </div>
+  </div>
+
+  <audio id="playerAudio" preload="none" loop
+    src="https://music.163.com/song/media/outer/url?id=2110353555.mp3"></audio>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
